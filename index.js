@@ -25,7 +25,8 @@ var visitor = {
       // 调用了 createClass
       if (path.node.name === 'createClass') {
         // 调用方是类react 则替换为createClass
-        if (path.parent && path.parent.object && /react/.test(path.parent.object.object.name)) {
+        if (path.parent && path.parent.object && path.parent.object.object && 
+          /react/.test(path.parent.object.object.name)) {
           path.parentPath.replaceWith(
             t.identifier('createClass')
           );
