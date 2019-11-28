@@ -17,7 +17,7 @@ var template = require("babel-template");
 
 // `
 
-var prepend = template(`var createClass = require("createClass")`);
+var prepend = template(`var createClass = require("create-react-class")`);
 var program = null;
 
 var visitor = {
