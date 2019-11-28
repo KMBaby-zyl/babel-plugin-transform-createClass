@@ -1,5 +1,5 @@
 {
-  "name": "babel-plugin-transform-createClass",
+  "name": "babel-plugin-transform-createclass",
   "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
